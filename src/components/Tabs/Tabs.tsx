@@ -13,7 +13,9 @@ const Tabs = () => {
 
 	const getTabs = async () => {
 		try {
-			const response = await fetch(import.meta.env.VITE_APP_API_URL)
+			const response = await fetch(
+				'https://fea6cc472887def7.mokky.dev/category'
+			)
 			const data = await response.json()
 			setTabs(data)
 			setActiveTab(data[0].id)
