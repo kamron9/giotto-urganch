@@ -53,7 +53,7 @@ const Tabs = () => {
 				))}
 			</div>
 			<h3>{!filterProducts.length && "Bu menyuda maxsulot yo'q"}</h3>
-			<div>
+			<div className={styles.product_wrapper}>
 				{filterProducts.map(product => (
 					<ProductCard key={product.id} product={product} />
 				))}

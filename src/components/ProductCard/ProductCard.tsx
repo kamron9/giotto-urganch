@@ -13,7 +13,7 @@ const ProductCard: FC<{ product: IProduct }> = ({ product }) => {
 				/>
 			</div>
 			<div className={styles.product__info}>
-				<span>{product.title}</span>
+				<span className={styles.product__title}>{product.title}</span>
 				<p className={styles.product__description}>{product.description}</p>
 				<span className={styles.product__price}>
 					{product.price.toLocaleString('ru')} so'm
