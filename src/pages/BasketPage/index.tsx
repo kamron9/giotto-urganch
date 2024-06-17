@@ -5,7 +5,7 @@ import BasketCard from './components/BasketCard'
 const BasketPage = () => {
 	const { calculateTotalPrice, basket, removeFromBasket } = useBasket()
 	const totalPrice = calculateTotalPrice()
-	const totalPriceWithTax = totalPrice + totalPrice * 0.14
+	const totalPriceWithTax = totalPrice + totalPrice * 0.15
 
 	return (
 		<div>
@@ -14,7 +14,7 @@ const BasketPage = () => {
 				<div>
 					<div>Общая сумма: {totalPrice.toLocaleString('ru')} сум</div>
 					<div>
-						Общая сумма с обслуживанием (14%):{'  '}
+						Общая сумма с обслуживанием (15%):{'  '}
 						{totalPriceWithTax.toLocaleString('ru')} сум
 					</div>
 				</div>

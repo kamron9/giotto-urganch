@@ -15,6 +15,8 @@ const HomePage = () => {
 			refetchOnMount: false,
 		}
 	)
+	console.log(data)
+
 	return (
 		<div>
 			<div className='caption'>
