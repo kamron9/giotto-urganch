@@ -1,1 +1,1 @@
-export const apiUrl: string = 'http://109.107.157.183/api/v1/shop'
+export const apiUrl: string = 'https://giotto.chogirmali.uz/api/v1/shop'
