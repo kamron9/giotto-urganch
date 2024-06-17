@@ -7,7 +7,8 @@
 }
 
 :root {
-	--primary-color: rgb(21, 191, 45);
+	--primary-color: #232c4d;
+	--green-color: rgb(30, 165, 48);
 	--dark-color: #000;
 	--gray-color: #2e2e2e;
 	--text-secondary: #a4a4a4;
@@ -21,11 +22,13 @@ html {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 60px 20px;
+	padding: 80px 20px;
 	height: auto;
 }
-h1 {
+h1,
+a {
 	margin: 0;
+	padding: 0;
 }
 .caption {
 	text-align: center;
@@ -35,4 +38,20 @@ h1 {
 	font-size: 1.25rem;
 	line-height: 1.75rem;
 	font-weight: 700;
+}
+.product-wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+}
+@media screen and (max-width: 1000px) {
+	.product-wrapper {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.product-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }

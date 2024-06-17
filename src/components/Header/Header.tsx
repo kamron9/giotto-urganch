@@ -1,19 +1,26 @@
 import { Link } from 'react-router-dom'
-import basket from '../../assets/icons/basket.svg'
+import basketIcon from '../../assets/icons/basket.svg'
+import { useBasket } from '../../context/BasketProvider'
 import styles from './header.module.css'
 const Header = () => {
+	const { basket } = useBasket()
 	return (
 		<div className={styles.header}>
 			<div className={styles.header__inner}>
-				<Link to={'/'}>
-					<img
-						height={35}
-						src='https://media-cdn.tripadvisor.com/media/photo-s/11/f1/47/af/waffle-and-italian-gelato.jpg'
-						alt=''
-					/>
+				<Link to={'/'} style={{ height: 51 }}>
+					<img height={51} src='/logo.png' alt='' />
 				</Link>
 				<Link to={'/basket'}>
-					<img draggable={false} src={basket} alt='basket-icon' height={35} />
+					<div className={styles.header_basket}>
+						{basket.length > 0 && <span>{basket.length}</span>}
+
+						<img
+							draggable={false}
+							src={basketIcon}
+							alt='basket-icon'
+							height={35}
+						/>
+					</div>
 				</Link>
 			</div>
 		</div>

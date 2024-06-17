@@ -1,6 +1,6 @@
 .header {
 	background-color: var(--primary-color);
-	height: 55px;
+
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -15,5 +15,22 @@
 	height: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 10px 20px;
+}
+.header_basket {
+	position: relative;
+}
+.header_basket span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: red;
+	color: white;
+	border-radius: 50%;
+	width: 15px;
+	height: 14px;
+	font-size: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
