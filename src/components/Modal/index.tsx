@@ -28,7 +28,11 @@ const Modal = () => {
 		<>
 			{isOpen && (
 				<div className={styles.modal} onClick={onClose}>
-					<div className={styles.modalContent}>
+					<div
+						className={`${styles.modalContent} ${
+							isOpen ? styles.modalOpen : ''
+						}`}
+					>
 						<button className={styles.modal_close} onClick={closeModal}>
 							<img src={leftArrow} alt='left arrow' />
 						</button>
@@ -41,35 +45,42 @@ const Modal = () => {
 							<span className={styles.modal_title}>{product?.name}</span>
 							<p className={styles.modal_text}>{product?.description}</p>
 						</div>
-						<div className={styles.modal_actions}>
-							{findProduct && findProduct.count > 0 ? (
-								<div>
-									<div className={styles.modal_count}>
-										<button
-											onClick={() => increment(product as IProduct)}
-											className={`${styles.modal_count_btn} ${styles.modal_increment_btn}`}
-										>
-											+
-										</button>
-										<span className={styles.modal_count_text}>
-											{findProduct.count}
-										</span>
-										<button
-											onClick={() => decrement(product as IProduct)}
-											className={`${styles.modal_count_btn} ${styles.modal_decrement_btn}`}
-										>
-											-
-										</button>
+						<div className={styles.modal__footer}>
+							<div className={styles.modal_price}>
+								<span className={styles.modal_price_text}>
+									{Number(product?.price).toLocaleString('ru')} сум
+								</span>
+							</div>
+							<div className={styles.modal_actions}>
+								{findProduct && findProduct.count > 0 ? (
+									<div>
+										<div className={styles.modal_count}>
+											<button
+												onClick={() => increment(product as IProduct)}
+												className={`${styles.modal_count_btn} ${styles.modal_increment_btn}`}
+											>
+												+
+											</button>
+											<span className={styles.modal_count_text}>
+												{findProduct.count}
+											</span>
+											<button
+												onClick={() => decrement(product as IProduct)}
+												className={`${styles.modal_count_btn} ${styles.modal_decrement_btn}`}
+											>
+												-
+											</button>
+										</div>
 									</div>
-								</div>
-							) : (
-								<button
-									onClick={() => addToBasket(product as IProduct)}
-									className={styles.add_basket_btn}
-								>
-									Добавить в корзину
-								</button>
-							)}
+								) : (
+									<button
+										onClick={() => addToBasket(product as IProduct)}
+										className={styles.add_basket_btn}
+									>
+										Добавить в корзину
+									</button>
+								)}
+							</div>
 						</div>
 					</div>
 				</div>

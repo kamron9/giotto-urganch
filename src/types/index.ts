@@ -13,6 +13,13 @@ export interface IProduct {
 	description: string
 	category: ICategory
 }
+export interface IOneCategory {
+	id: number
+	name: string
+	image: string
+	parent: number | null
+	products: IProduct[]
+}
 export interface IBasket extends IProduct {
 	count: number
 }

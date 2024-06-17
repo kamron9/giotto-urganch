@@ -3,11 +3,13 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.5);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 20;
+	transition: all 1s ease;
 }
 
 .modalContent {
@@ -62,11 +64,19 @@
 .modal_close:hover {
 	background-color: #0056b3;
 }
+
+.modal__footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .add_basket_btn {
 	background-color: var(--green-color);
 	color: white;
 	border: none;
 	width: 150px;
+	height: 35px;
 	padding: 10px;
 	border-radius: 5px;
 	cursor: pointer;
@@ -78,8 +88,12 @@
 	padding: 10px;
 	border-radius: 5px;
 	cursor: pointer;
-	width: 65px;
+	width: 60px;
 	height: 35px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.3rem;
 }
 .modal_increment_btn {
 	background-color: var(--green-color);
@@ -91,4 +105,20 @@
 	font-size: 1rem;
 	font-weight: 700;
 	padding: 0 10px;
+}
+/* modal animation */
+
+@keyframes modalOpen {
+	0% {
+		opacity: 0;
+		transform: scale(0.7);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.modalOpen {
+	animation: modalOpen 0.3s ease-out;
 }
