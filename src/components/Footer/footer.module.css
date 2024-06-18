@@ -34,3 +34,27 @@
 .socials_icon {
 	height: 30px;
 }
+.footer_powered_by {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.footer_powered_by span {
+	color: var(--text-secondary);
+}
+
+.footer_powered_by a {
+	color: chartreuse;
+}
+
+.button_developed {
+	padding: 17px 40px;
+	border-radius: 10px;
+	border: 0;
+	border: 1px solid var(--gray-color);
+	color: var(--text-secondary);
+	background-color: transparent;
+	letter-spacing: 1.5px;
+	font-size: 15px;
+	cursor: pointer;
+}

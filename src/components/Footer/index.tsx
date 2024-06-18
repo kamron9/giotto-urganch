@@ -66,6 +66,13 @@ const Footer = () => {
 					</a>
 				</div>
 			</div>
+			{/* <div className={styles.footer_powered_by}>
+				<a href='https://t.me/kamron987' target='blank'>
+					<button className={styles.button_developed} role='button'>
+						Developed by Alimov
+					</button>
+				</a>
+			</div> */}
 		</div>
 	)
 }

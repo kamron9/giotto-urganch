@@ -43,6 +43,7 @@ a {
 
 .caption .close-btn {
 	position: absolute;
+
 	left: 0;
 	background-color: var(--primary-color);
 	color: #fff;
@@ -54,7 +55,7 @@ a {
 	border-radius: 6px;
 	cursor: pointer;
 }
-*/ .caption span {
+.caption span {
 	font-size: 1.25rem;
 	line-height: 1.75rem;
 	font-weight: 700;
