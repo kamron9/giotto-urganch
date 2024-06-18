@@ -41,13 +41,9 @@ a {
 	position: relative;
 }
 
-/* .caption_actions {
+.caption .close-btn {
 	position: absolute;
 	left: 0;
-	top: 0;
-	padding: 2rem 0;
-}
-.caption .back {
 	background-color: var(--primary-color);
 	color: #fff;
 	font-size: 1rem;
@@ -57,8 +53,8 @@ a {
 	outline: none;
 	border-radius: 6px;
 	cursor: pointer;
-} */
-.caption span {
+}
+*/ .caption span {
 	font-size: 1.25rem;
 	line-height: 1.75rem;
 	font-weight: 700;

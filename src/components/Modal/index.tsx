@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import leftArrow from '../../assets/icons/left-arrow.svg'
+import leftArrow from '../../assets/icons/close.svg'
 import { useBasket } from '../../context/BasketProvider'
 import { useModal } from '../../context/ModalProvider'
 import { IProduct } from '../../types'

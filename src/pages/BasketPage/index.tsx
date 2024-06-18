@@ -1,8 +1,10 @@
+import { useNavigate } from 'react-router-dom'
 import { useBasket } from '../../context/BasketProvider'
 import styles from './basket.module.css'
 import BasketCard from './components/BasketCard'
 
 const BasketPage = () => {
+	const navigate = useNavigate()
 	const { calculateTotalPrice, basket, removeFromBasket } = useBasket()
 	const totalPrice = calculateTotalPrice()
 	const totalPriceWithTax = totalPrice + totalPrice * 0.15
@@ -32,7 +34,17 @@ const BasketPage = () => {
 					</button>
 				</div>
 			) : (
-				<div style={{ textAlign: 'center' }}>Корзина пуста</div>
+				<div className={styles.basket_info}>
+					<div>
+						<span>Корзина пуста</span>
+					</div>
+					<button
+						onClick={() => navigate('/')}
+						className={styles.basket_back_btn}
+					>
+						Вернуться в меню
+					</button>
+				</div>
 			)}
 		</div>
 	)

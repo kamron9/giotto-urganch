@@ -1,6 +1,6 @@
-// import { useParams } from 'react-router-dom'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { getData } from '../../api'
+import leftArrowIcon from '../../assets/icons/left-arrow.svg'
 import Card from '../../components/Card'
 import Loader from '../../components/Loader'
 import { IOneCategory, IProduct } from '../../types'
@@ -8,9 +8,13 @@ import { IOneCategory, IProduct } from '../../types'
 const CategoryPage = () => {
 	const { id } = useParams<{ id: string }>()
 	const { data, isLoading } = getData<IOneCategory>(`/category/${id}`)
+	const navigate = useNavigate()
 	return (
 		<div>
 			<div className='caption'>
+				<button className='close-btn' onClick={() => navigate(-1)}>
+					<img src={leftArrowIcon} alt='left-icon' />
+				</button>
 				<span>{data?.name}</span>
 			</div>
 			{isLoading ? (
