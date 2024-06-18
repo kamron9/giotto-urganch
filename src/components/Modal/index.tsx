@@ -56,19 +56,20 @@ const Modal = () => {
 									<div>
 										<div className={styles.modal_count}>
 											<button
-												onClick={() => increment(product as IProduct)}
-												className={`${styles.modal_count_btn} ${styles.modal_increment_btn}`}
-											>
-												+
-											</button>
-											<span className={styles.modal_count_text}>
-												{findProduct.count}
-											</span>
-											<button
 												onClick={() => decrement(product as IProduct)}
 												className={`${styles.modal_count_btn} ${styles.modal_decrement_btn}`}
 											>
 												-
+											</button>
+
+											<span className={styles.modal_count_text}>
+												{findProduct.count}
+											</span>
+											<button
+												onClick={() => increment(product as IProduct)}
+												className={`${styles.modal_count_btn} ${styles.modal_increment_btn}`}
+											>
+												+
 											</button>
 										</div>
 									</div>

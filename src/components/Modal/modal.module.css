@@ -48,21 +48,17 @@
 .modal_close {
 	position: absolute;
 	top: -15px;
-	left: -10px;
+	right: -10px;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	border: none;
-	background-color: #007bff;
+	background-color: var(--primary-color);
 	color: white;
 	cursor: pointer;
-}
-.modal_close img {
-	width: 20px;
-	height: 20px;
-}
-.modal_close:hover {
-	background-color: #0056b3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .modal__footer {

@@ -8,17 +8,19 @@ import ProductPage from './pages/ProductPage'
 
 function Root() {
 	return (
-		<div className='container'>
-			<Header />
-			<Routes>
-				<Route path='/' element={<HomePage />} />
-				<Route path='/category/:id' element={<CategoryPage />} />
-				<Route path='/product/:id' element={<ProductPage />} />
-				<Route path='/basket' element={<BasketPage />} />
-				<Route path='*' element={<Navigate to={'/'} />} />
-			</Routes>
-			<Modal />
-		</div>
+		<>
+			<div className='container'>
+				<Header />
+				<Routes>
+					<Route path='/' element={<HomePage />} />
+					<Route path='/category/:id' element={<CategoryPage />} />
+					<Route path='/product/:id' element={<ProductPage />} />
+					<Route path='/basket' element={<BasketPage />} />
+					<Route path='*' element={<Navigate to={'/'} />} />
+				</Routes>
+				<Modal />
+			</div>
+		</>
 	)
 }
 

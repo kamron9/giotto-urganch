@@ -19,6 +19,7 @@ export interface IOneCategory {
 	image: string
 	parent: number | null
 	products: IProduct[]
+	sub_categories: ICategory[]
 }
 export interface IBasket extends IProduct {
 	count: number

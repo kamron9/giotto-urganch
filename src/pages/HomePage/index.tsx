@@ -1,9 +1,10 @@
 import { useQuery } from 'react-query'
 import Card from '../../components/Card'
+import Footer from '../../components/Footer'
 import Loader from '../../components/Loader'
 import { apiUrl } from '../../contants/urls'
 import { ICategory } from '../../types'
-
+import styles from './home.module.css'
 const HomePage = () => {
 	const { data, isLoading } = useQuery<ICategory[]>(
 		'category',
@@ -17,12 +18,12 @@ const HomePage = () => {
 	)
 
 	return (
-		<div>
+		<div className={styles.home}>
 			<div className='caption'>
 				<span>МЕНЮ</span>
 			</div>
 
-			<div className=''>
+			<div className={styles.wrapper}>
 				{isLoading ? (
 					<Loader />
 				) : (
@@ -33,6 +34,7 @@ const HomePage = () => {
 					</div>
 				)}
 			</div>
+			<Footer />
 		</div>
 	)
 }
