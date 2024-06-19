@@ -5,8 +5,10 @@ import styles from '../basket.module.css'
 const BasketCard = ({ product }: { product: IBasket }) => {
 	const { removeFromBasket, increment, decrement } = useBasket()
 
+	const productCount = product.count > 1
+
 	const handleDecrement = () => {
-		if (product.count > 1) {
+		if (productCount) {
 			decrement(product)
 		}
 	}
@@ -26,7 +28,11 @@ const BasketCard = ({ product }: { product: IBasket }) => {
 					{(product.price * product.count).toLocaleString('ru')} сум
 				</p>
 				<div>
-					<button onClick={handleDecrement} className='count_btn decrement_btn'>
+					<button
+						onClick={handleDecrement}
+						disabled={!productCount}
+						className='count_btn decrement_btn'
+					>
 						-
 					</button>
 					<span className='count_text'>{product.count}</span>
