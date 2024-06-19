@@ -5,6 +5,7 @@ import Loader from '../../components/Loader'
 import { apiUrl } from '../../contants/urls'
 import { ICategory } from '../../types'
 import styles from './home.module.css'
+
 const HomePage = () => {
 	const { data, isLoading } = useQuery<ICategory[]>(
 		'category',
