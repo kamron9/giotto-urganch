@@ -12,10 +12,7 @@ const CategoryPage = () => {
 	return (
 		<div>
 			<div className='caption'>
-				<button
-					className='close-btn'
-					onClick={() => navigate('/', { replace: true })}
-				>
+				<button className='close-btn' onClick={() => navigate(-1)}>
 					<img src={leftArrowIcon} alt='left-icon' />
 				</button>
 				<span>{data?.name}</span>
