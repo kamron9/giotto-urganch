@@ -65,6 +65,32 @@ a {
 	grid-template-columns: repeat(4, 1fr);
 	gap: 10px;
 }
+
+.count_btn {
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 60px;
+	height: 35px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.3rem;
+}
+.increment_btn {
+	background-color: var(--green-color);
+}
+.decrement_btn {
+	background-color: red;
+}
+.count_text {
+	font-size: 1rem;
+	font-weight: 700;
+	padding: 0 10px;
+}
+
 @media screen and (max-width: 1000px) {
 	.product-wrapper {
 		grid-template-columns: repeat(3, 1fr);
@@ -74,5 +100,10 @@ a {
 @media screen and (max-width: 500px) {
 	.product-wrapper {
 		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (max-width: 430px) {
+	html {
+		font-size: 14px;
 	}
 }

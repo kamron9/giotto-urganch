@@ -7,16 +7,10 @@ import { ICategory } from '../../types'
 import styles from './home.module.css'
 
 const HomePage = () => {
-	const { data, isLoading } = useQuery<ICategory[]>(
-		'categories',
-		async () => {
-			const res = await fetch(apiUrl + '/categories')
-			return res.json()
-		},
-		{
-			refetchOnMount: false,
-		}
-	)
+	const { data, isLoading } = useQuery<ICategory[]>('categories', async () => {
+		const res = await fetch(apiUrl + '/categories')
+		return res.json()
+	})
 
 	return (
 		<div className={styles.home}>

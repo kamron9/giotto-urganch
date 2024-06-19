@@ -9,16 +9,10 @@ import { IOneCategory, IProduct } from '../../types'
 const CategoryPage = () => {
 	const { id } = useParams<{ id: string }>()
 	const Key = `category${id}`
-	const { data, isLoading } = useQuery<IOneCategory>(
-		Key,
-		async () => {
-			const res = await fetch(apiUrl + '/category/' + id)
-			return res.json()
-		},
-		{
-			refetchOnMount: false,
-		}
-	)
+	const { data, isLoading } = useQuery<IOneCategory>(Key, async () => {
+		const res = await fetch(apiUrl + '/category/' + id)
+		return res.json()
+	})
 
 	const navigate = useNavigate()
 	return (

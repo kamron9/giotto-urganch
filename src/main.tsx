@@ -6,7 +6,13 @@ import BasketProvider from './context/BasketProvider.tsx'
 import ModalProvider from './context/ModalProvider.tsx'
 import './index.css'
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient({
+	defaultOptions: {
+		queries: {
+			refetchOnMount: false,
+		},
+	},
+})
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<BrowserRouter>
 		<QueryClientProvider client={queryClient}>

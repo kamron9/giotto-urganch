@@ -25,7 +25,7 @@
 
 .basket_card__image img {
 	width: 150px;
-	height: 100px;
+	height: 130px;
 	object-fit: cover;
 	border-radius: 10px;
 }
@@ -45,7 +45,7 @@
 }
 .remove_product {
 	position: absolute;
-	top: 50%;
+	bottom: 0;
 	right: 0;
 	cursor: pointer;
 }
@@ -68,4 +68,9 @@
 	outline: none;
 	border-radius: 6px;
 	cursor: pointer;
+}
+@media screen and (max-width: 430px) {
+	.remove_product {
+		top: 20%;
+	}
 }

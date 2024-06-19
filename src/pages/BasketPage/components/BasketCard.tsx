@@ -3,7 +3,14 @@ import { useBasket } from '../../../context/BasketProvider'
 import { IBasket } from '../../../types'
 import styles from '../basket.module.css'
 const BasketCard = ({ product }: { product: IBasket }) => {
-	const { removeFromBasket } = useBasket()
+	const { removeFromBasket, increment, decrement } = useBasket()
+
+	const handleDecrement = () => {
+		if (product.count > 1) {
+			decrement(product)
+		}
+	}
+
 	return (
 		<div className={styles.basket_card}>
 			<div className={styles.basket_card__image}>
@@ -18,6 +25,18 @@ const BasketCard = ({ product }: { product: IBasket }) => {
 					Итог : {product.count} &nbsp; / &nbsp;
 					{(product.price * product.count).toLocaleString('ru')} сум
 				</p>
+				<div>
+					<button onClick={handleDecrement} className='count_btn decrement_btn'>
+						-
+					</button>
+					<span className='count_text'>{product.count}</span>
+					<button
+						onClick={() => increment(product)}
+						className='count_btn increment_btn'
+					>
+						+
+					</button>
+				</div>
 				<div
 					className={styles.remove_product}
 					onClick={() => removeFromBasket('one', product)}
