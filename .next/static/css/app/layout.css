@@ -1,0 +1,214 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: #232c4d;
+	--green-color: rgb(30, 165, 48);
+	--dark-color: #000;
+	--gray-color: #2e2e2e;
+	--text-secondary: #a4a4a4;
+}
+
+html {
+	background-color: var(--dark-color);
+	color: #fff;
+}
+.home-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 80px 20px;
+	height: auto;
+}
+h1,
+a {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+.caption {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 0;
+	position: relative;
+}
+
+.caption .close-btn {
+	position: absolute;
+
+	left: 0;
+	background-color: var(--primary-color);
+	color: #fff;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	width: -moz-fit-content;
+	width: fit-content;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.caption span {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	font-weight: 700;
+}
+.product-wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	gap: 10px;
+}
+
+.count_btn {
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 60px;
+	height: 35px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.3rem;
+}
+.increment_btn {
+	background-color: var(--green-color);
+}
+.decrement_btn {
+	background-color: red;
+}
+.count_text {
+	font-size: 1rem;
+	font-weight: 700;
+	padding: 0 10px;
+}
+button:disabled {
+	opacity: 0.5;
+}
+
+@media screen and (max-width: 1000px) {
+	.product-wrapper {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.product-wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (max-width: 430px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/header.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.header_header__OaHfl {
+	background-color: rgba(35, 44, 77, 0.627);
+	-webkit-backdrop-filter: blur(10px);
+	        backdrop-filter: blur(10px);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+}
+.header_header__inner__dqcYh {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px 20px;
+}
+.header_header_basket__zBWgJ {
+	position: relative;
+}
+.header_header_basket__zBWgJ span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: red;
+	color: white;
+	border-radius: 50%;
+	width: 15px;
+	height: 14px;
+	font-size: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/layout.tsx","import":"Nunito","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* cyrillic-ext */
+@font-face {
+  font-family: '__Nunito_14f33d';
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url(/_next/static/media/bde16c1724335d95-s.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: '__Nunito_14f33d';
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url(/_next/static/media/8a9e72331fecd08b-s.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Nunito_14f33d';
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url(/_next/static/media/0610ebff456d6cfc-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Nunito_14f33d';
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url(/_next/static/media/e3b8d441242e07fb-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Nunito_14f33d';
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url(/_next/static/media/21ed5661b47f7f6d-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: '__Nunito_Fallback_14f33d';src: local("Arial");ascent-override: 99.71%;descent-override: 34.82%;line-gap-override: 0.00%;size-adjust: 101.39%
+}.__className_14f33d {font-family: '__Nunito_14f33d', '__Nunito_Fallback_14f33d';font-style: normal
+}
+

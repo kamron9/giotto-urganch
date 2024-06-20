@@ -1,0 +1,76 @@
+/* basket page style */
+.basket_wrapper {
+	margin-top: 20px;
+}
+.clear_basket {
+	margin-top: 20px;
+	text-align: center;
+}
+.clear_basket button {
+	padding: 10px 20px;
+	background-color: red;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+/* basket card style */
+.basket_card {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 0;
+	border-bottom: 1px solid var(--primary-color);
+	gap: 20px;
+}
+
+.basket_card__image img {
+	width: 150px;
+	height: 130px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+.basket_card__details {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: relative;
+}
+.basket_card__title {
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	word-break: break-all;
+}
+.remove_product {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	cursor: pointer;
+}
+.trash_icon {
+	height: 30px;
+}
+.basket_info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+.basket_back_btn {
+	background-color: var(--primary-color);
+	color: #fff;
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	width: fit-content;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+@media screen and (max-width: 430px) {
+	.remove_product {
+		top: 20%;
+	}
+}

@@ -1,0 +1,36 @@
+.header {
+	background-color: rgba(35, 44, 77, 0.627);
+	backdrop-filter: blur(10px);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+}
+.header__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px 20px;
+}
+.header_basket {
+	position: relative;
+}
+.header_basket span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: red;
+	color: white;
+	border-radius: 50%;
+	width: 15px;
+	height: 14px;
+	font-size: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

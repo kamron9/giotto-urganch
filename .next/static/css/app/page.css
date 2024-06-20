@@ -1,0 +1,168 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/card.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+.card_product__R05kP {
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	        user-select: none;
+	cursor: pointer;
+}
+.card_product__img__ZGiT_ {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 6px;
+}
+.card_product__text__lpYqu {
+	font-size: 1rem;
+	font-weight: 700;
+	text-align: center;
+	display: -webkit-box;
+	font-weight: bolder;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	word-break: break-all;
+	color: white;
+}
+
+@media screen and (max-width: 500px) {
+	.card_product__img__ZGiT_ {
+		height: 120px;
+	}
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/footer.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.footer_footer__e_ilT {
+	margin-top: 50px;
+}
+
+.footer_list_wrapper__Abnug {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.footer_footer_list__8jKOZ {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.footer_footer_list__item__oyIpX {
+	list-style-type: none;
+}
+.footer_footer_list__item__oyIpX a {
+	display: flex;
+	color: var(--text-secondary);
+
+	gap: 5px;
+}
+.footer_footer_icon___uMz_ {
+	height: 20px;
+}
+.footer_socials___tpCZ {
+	display: flex;
+	gap: 10px;
+}
+.footer_socials_icon__s19uO {
+	height: 30px;
+}
+.footer_footer_powered_by__J2J6n {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.footer_footer_powered_by__J2J6n span {
+	color: var(--text-secondary);
+}
+
+.footer_footer_powered_by__J2J6n a {
+	color: chartreuse;
+}
+
+.footer_button_developed__vZ7jI {
+	padding: 17px 40px;
+	border-radius: 10px;
+	border: 0;
+	border: 1px solid var(--gray-color);
+	color: var(--text-secondary);
+	background-color: transparent;
+	letter-spacing: 1.5px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/loader.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.loader_loader_wrapper__I9E0i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.loader_loader__HVNnM {
+	--s: 20px;
+
+	--_d: calc(0.353 * var(--s));
+	width: calc(var(--s) + var(--_d));
+	aspect-ratio: 1;
+	display: grid;
+}
+.loader_loader__HVNnM:before,
+.loader_loader__HVNnM:after {
+	content: '';
+	grid-area: 1/1;
+	-webkit-clip-path: polygon(
+		var(--_d) 0,
+		100% 0,
+		100% calc(100% - var(--_d)),
+		calc(100% - var(--_d)) 100%,
+		0 100%,
+		0 var(--_d)
+	);
+	        clip-path: polygon(
+		var(--_d) 0,
+		100% 0,
+		100% calc(100% - var(--_d)),
+		calc(100% - var(--_d)) 100%,
+		0 100%,
+		0 var(--_d)
+	);
+	background: conic-gradient(
+		from -90deg at calc(100% - var(--_d)) var(--_d),
+		#232c4d 135deg,
+		#232c4d 0 270deg,
+		#232c4d 0
+	);
+	animation: loader_l6__xr1kV 2s infinite;
+}
+.loader_loader__HVNnM:after {
+	animation-delay: -1s;
+}
+@keyframes loader_l6__xr1kV {
+	0% {
+		transform: translate(0, 0);
+	}
+	25% {
+		transform: translate(30px, 0);
+	}
+	50% {
+		transform: translate(30px, 30px);
+	}
+	75% {
+		transform: translate(0, 30px);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+

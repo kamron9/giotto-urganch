@@ -1,0 +1,206 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/loader.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.loader_loader_wrapper__I9E0i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.loader_loader__HVNnM {
+	--s: 20px;
+
+	--_d: calc(0.353 * var(--s));
+	width: calc(var(--s) + var(--_d));
+	aspect-ratio: 1;
+	display: grid;
+}
+.loader_loader__HVNnM:before,
+.loader_loader__HVNnM:after {
+	content: '';
+	grid-area: 1/1;
+	-webkit-clip-path: polygon(
+		var(--_d) 0,
+		100% 0,
+		100% calc(100% - var(--_d)),
+		calc(100% - var(--_d)) 100%,
+		0 100%,
+		0 var(--_d)
+	);
+	        clip-path: polygon(
+		var(--_d) 0,
+		100% 0,
+		100% calc(100% - var(--_d)),
+		calc(100% - var(--_d)) 100%,
+		0 100%,
+		0 var(--_d)
+	);
+	background: conic-gradient(
+		from -90deg at calc(100% - var(--_d)) var(--_d),
+		#232c4d 135deg,
+		#232c4d 0 270deg,
+		#232c4d 0
+	);
+	animation: loader_l6__xr1kV 2s infinite;
+}
+.loader_loader__HVNnM:after {
+	animation-delay: -1s;
+}
+@keyframes loader_l6__xr1kV {
+	0% {
+		transform: translate(0, 0);
+	}
+	25% {
+		transform: translate(30px, 0);
+	}
+	50% {
+		transform: translate(30px, 30px);
+	}
+	75% {
+		transform: translate(0, 30px);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/modal.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+.modal_modal__5C7CX {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+	transition: all 1s ease;
+}
+
+.modal_modalContent__YC0UJ {
+	margin: 0 20px;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.803);
+	-webkit-backdrop-filter: blur(10px);
+	        backdrop-filter: blur(10px);
+	padding: 30px;
+	border-radius: 10px;
+	max-width: 500px;
+	width: 100%;
+	border: 2px solid var(--primary-color);
+	box-shadow: 0px 0px 10px var(--primary-color);
+}
+.modal_modal_inner__cL0Zn {
+	padding: 10px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+.modal_modal_image__HLIdV {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+}
+.modal_modal_title__sk6qB {
+	font-size: 1rem;
+	font-weight: 700;
+}
+.modal_modal_text__cW1km {
+	font-size: 0.8rem;
+	color: var(--text-secondary);
+}
+
+.modal_modal_close__3u_e5 {
+	position: absolute;
+	top: -15px;
+	right: -10px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: none;
+	background-color: var(--primary-color);
+	color: white;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal_modal__footer__MeGBt {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.modal_add_basket_btn__Z7qXX {
+	background-color: var(--green-color);
+	color: white;
+	border: none;
+	width: 150px;
+	height: 35px;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* modal animation */
+
+@keyframes modal_modalOpen__gQWkZ {
+	0% {
+		opacity: 0;
+		transform: scale(0.7);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.modal_modalOpen__gQWkZ {
+	animation: modal_modalOpen__gQWkZ 0.3s ease-out;
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./styles/card.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+.card_product__R05kP {
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	        user-select: none;
+	cursor: pointer;
+}
+.card_product__img__ZGiT_ {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 6px;
+}
+.card_product__text__lpYqu {
+	font-size: 1rem;
+	font-weight: 700;
+	text-align: center;
+	display: -webkit-box;
+	font-weight: bolder;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	word-break: break-all;
+	color: white;
+}
+
+@media screen and (max-width: 500px) {
+	.card_product__img__ZGiT_ {
+		height: 120px;
+	}
+}
+
