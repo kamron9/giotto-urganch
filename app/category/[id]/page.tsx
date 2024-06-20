@@ -11,13 +11,12 @@ import Card from '../../../components/Card'
 const Category = ({ params }: { params: { id: string } }) => {
 	const router = useRouter()
 	const id = params.id
-	const Key = `category${id}`
 	const { data, isLoading } = useSWR<IOneCategory>(`/category/${id}`)
 
 	return (
 		<div className='container'>
 			<div className='caption'>
-				<button className='close-btn' onClick={() => router.push('/')}>
+				<button className='close-btn' onClick={() => router.back()}>
 					<Image src={leftArrowIcon} alt='left-icon' width={20} height={20} />
 				</button>
 				<span>{data?.name}</span>
