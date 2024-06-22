@@ -9,7 +9,7 @@ const inter = Nunito({ subsets: ['latin'] })
 export const metadata: Metadata = {
 	title: 'Giotto Urgench',
 	description: 'Giotto Urgench menu',
-	icons: '/logo.png',
+	icons: '/window-logo.png',
 }
 
 export default function RootLayout({
