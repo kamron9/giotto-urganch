@@ -71,8 +71,8 @@ a {
 .product-wrapper {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 10px;
-	gap: 10px;
+	grid-gap: 15px;
+	gap: 15px;
 }
 
 .count_btn {

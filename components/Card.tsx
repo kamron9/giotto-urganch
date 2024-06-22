@@ -1,10 +1,8 @@
 'use client'
-import { FC } from 'react'
-// import { useNavigate } from 'react-router-dom'
-// import { useModal } from '../../context/ModalProvider'
 import { ICategory, IProduct } from '@/types'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
+import { FC } from 'react'
 import { useModal } from '../context/ModalProvider'
 import styles from '../styles/card.module.css'
 
@@ -24,6 +22,15 @@ const Card: FC<{ product: ICategory | IProduct; isCategory: boolean }> = ({
 	return (
 		<div onClick={handleNavigate}>
 			<div className={styles.product}>
+				{!isCategory && (product as IProduct).is_new && (
+					<Image
+						src={'/new.png'}
+						alt='new'
+						height={40}
+						width={100}
+						className={styles.new_photo}
+					/>
+				)}
 				<Image
 					width={200}
 					height={200}

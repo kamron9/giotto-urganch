@@ -11,6 +11,7 @@ export interface IProduct {
 	price: number
 	image: string
 	description: string
+	is_new: boolean
 	category: ICategory
 }
 export interface IOneCategory {

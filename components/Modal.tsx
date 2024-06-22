@@ -39,13 +39,25 @@ const Modal = () => {
 						<button className={styles.modal_close} onClick={closeModal}>
 							<Image width={30} height={30} src={closeIcon} alt='left arrow' />
 						</button>
-						<Image
-							src={product?.image as string}
-							className={styles.modal_image}
-							alt={product?.name as string}
-							width={300}
-							height={200}
-						/>
+						<div className={styles.img_wrapper}>
+							{product?.is_new && (
+								<Image
+									className={styles.new_photo}
+									src={'/new.png'}
+									width={100}
+									height={40}
+									alt='new'
+								/>
+							)}
+							<Image
+								src={product?.image as string}
+								className={styles.modal_image}
+								alt={product?.name as string}
+								width={300}
+								height={200}
+							/>
+						</div>
+
 						<div className={styles.modal_inner}>
 							<span className={styles.modal_title}>{product?.name}</span>
 							<p className={styles.modal_text}>{product?.description}</p>

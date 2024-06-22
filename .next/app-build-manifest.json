@@ -17,10 +17,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/_not-found/page": [
+    "/category/[id]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/css/app/category/[id]/page.css",
+      "static/chunks/app/category/[id]/page.js"
     ]
   }
 }

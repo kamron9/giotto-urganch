@@ -10,7 +10,7 @@ const Header = () => {
 		<div className={styles.header}>
 			<div className={styles.header__inner}>
 				<Link href={'/'} style={{ height: 51 }}>
-					<img height={51} src='/logo.png' alt='' />
+					<img height={51} src='/logo.png' alt='logo' />
 				</Link>
 				<Link href={'/basket'}>
 					<div className={styles.header_basket}>
